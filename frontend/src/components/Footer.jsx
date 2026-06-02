@@ -14,7 +14,7 @@ const [message, setMessage] = useState("");
         </p>
 
         <p>
-          Contacts: 9187453367 | info@sharacircuits.com
+          Contacts: 9392578380 | info@sharacircuits.com
         </p>
 
         <div className="newsletter">
