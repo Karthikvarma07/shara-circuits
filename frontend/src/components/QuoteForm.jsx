@@ -22,7 +22,7 @@ function QuoteForm() {
 
     try {
       const response = await fetch(
-        "https://shara-backend.onrender.com",
+  "https://shara-backend.onrender.com/api/contact",
         {
           method: "POST",
           headers: {
