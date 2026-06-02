@@ -24,15 +24,21 @@ function Hero() {
 
       <div className="feature-strip">
 
-        <span>⚡ Rapid Prototyping</span>
+        <div className="feature-track">
 
-        <span>⚡ High-Quality Fabrication</span>
+          <span>⚡ Rapid Prototyping</span>
+          <span>⚡ High-Quality Fabrication</span>
+          <span>⚡ Precision Assembly</span>
+          <span>⚡ End-to-End Solutions</span>
+          <span>⚡ Expert PCB Design</span>
 
-        <span>⚡ Precision Assembly</span>
+          <span>⚡ Rapid Prototyping</span>
+          <span>⚡ High-Quality Fabrication</span>
+          <span>⚡ Precision Assembly</span>
+          <span>⚡ End-to-End Solutions</span>
+          <span>⚡ Expert PCB Design</span>
 
-        <span>⚡ End-to-End Solutions</span>
-
-        <span>⚡ Expert PCB Design</span>
+        </div>
 
       </div>
 
