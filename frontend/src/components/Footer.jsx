@@ -1,4 +1,7 @@
+import { useState } from "react";
 function Footer() {
+  const [email, setEmail] = useState("");
+const [message, setMessage] = useState("");
   return (
     <footer className="footer">
 
@@ -21,12 +24,35 @@ function Footer() {
           <div className="newsletter-form">
             <input
               type="email"
-              placeholder="Email address"
+             placeholder="Email Address"
+             value={email}
+             onChange={(e) => setEmail(e.target.value)}
             />
 
-            <button>
-              Submit
-            </button>
+           <button
+           type="button"
+            onClick={() => {
+             setMessage("Subscribed Successfully!");
+             setEmail("");
+
+               setTimeout(() => {
+               setMessage("");
+            }, 3000);
+          }}
+>
+  Submit
+</button>
+             {message && (
+  <p
+    style={{
+      color: "#22c55e",
+      marginTop: "10px",
+      fontWeight: "600",
+    }}
+  >
+    {message}
+  </p>
+)}
           </div>
 
         </div>
