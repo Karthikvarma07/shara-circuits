@@ -6,7 +6,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import QuoteForm from "./components/QuoteForm";
-import Services from "./components/Services";
+import Services from "./components/services";
 import FloatingButtons from "./components/FloatingButtons";
 
 import "./App.css";
