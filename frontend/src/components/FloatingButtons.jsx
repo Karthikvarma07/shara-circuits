@@ -13,7 +13,7 @@ function FloatingButtons() {
       </a>
 
       <a
-        href="tel:+919187453367"
+        href="tel:+9392578380"
         className="call-float-btn"
       >
         <FaPhoneAlt />
