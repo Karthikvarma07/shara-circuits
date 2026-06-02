@@ -2,10 +2,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import Reviews from "./components/Reviews";
-import Stats from "./components/Stats";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import QuoteForm from "./components/QuoteForm";
+import Services from "./components/Services";
+import FloatingButtons from "./components/FloatingButtons";
 
 import "./App.css";
 
@@ -15,11 +17,13 @@ function App() {
       <Navbar />
       <Hero />
       <HowItWorks />
+      <Services />
       <Reviews />
-      <Stats />
       <WhyChooseUs />
       <FAQ />
+      <QuoteForm />
       <Footer />
+      <FloatingButtons />
     </>
   );
 }

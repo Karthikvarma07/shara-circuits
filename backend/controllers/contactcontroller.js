@@ -2,10 +2,12 @@ import Contact from "../models/contact.js";
 
 export const createContact = async (req, res) => {
   try {
-    const { name, phone } = req.body;
+    const { service, name, email, phone } = req.body;
 
     const contact = await Contact.create({
+      service,
       name,
+      email,
       phone,
     });
 
@@ -13,10 +15,13 @@ export const createContact = async (req, res) => {
       success: true,
       data: contact,
     });
+
   } catch (error) {
+
     res.status(500).json({
       success: false,
       message: error.message,
     });
+
   }
 };

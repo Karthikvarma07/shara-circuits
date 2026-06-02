@@ -1,107 +1,38 @@
-import { useState } from "react";
-
 function Hero() {
-
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          phone,
-        }),
-      });
-
-      alert("Submitted Successfully");
-
-      setName("");
-      setPhone("");
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
-    <section className="hero">
+    <section className="hero-new">
 
-      <div className="overlay"></div>
+      <div className="hero-center">
 
-      <div className="hero-content">
+        <h1>
+          Are you looking for a PCB Design &
+          <br />
+          Manufacturing Company?
+        </h1>
 
-        <div className="hero-left">
+        <p>
+          Discover the proven, all-in-one system trusted by various reputable
+          organizations to get flawless, production-ready PCBs in record
+          time—without juggling multiple vendors.
+        </p>
 
-          <span className="tag">
-            #1 PCB Manufacturing Company
-          </span>
+        <a href="#quote-form" className="hero-btn">
+          Get Instant Pricing Now
+        </a>
 
-          <h1>
-            Are you looking for a
-            <span className="green">
-              {" "}PCB Design & Manufacturing
-            </span>
-            {" "}Company?
-          </h1>
+      </div>
 
-          <p>
-            Get high-quality PCBs designed and manufactured with precision and delivered on time.
-          </p>
+      <div className="feature-strip">
 
-          <ul>
-            <li>🟢 High-Quality & Reliable PCBs</li>
-            <li>🟢 Fast Turnaround & On-Time Delivery</li>
-            <li>🟢 Competitive Pricing & Custom Solutions</li>
-          </ul>
+        <span>⚡ Rapid Prototyping</span>
 
-          <div className="testimonial">
-            ⭐⭐⭐⭐⭐
-            <p>
-              Exceptional PCB quality and fast delivery.
-              Highly recommended.
-            </p>
-            <strong>Rajesh K</strong>
-          </div>
+        <span>⚡ High-Quality Fabrication</span>
 
-        </div>
+        <span>⚡ Precision Assembly</span>
 
-        <div className="hero-right">
+        <span>⚡ End-to-End Solutions</span>
 
-          <form onSubmit={handleSubmit} className="hero-form">
-
-            <label>Name</label>
-
-            <input
-              type="text"
-              placeholder="Your name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-
-            <label>Phone Number</label>
-
-            <input
-              type="text"
-              placeholder="Your phone number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              required
-            />
-
-            <button type="submit">
-              Get Instant Pricing Now
-            </button>
-
-          </form>
-
-        </div>
+        <span>⚡ Expert PCB Design</span>
 
       </div>
 

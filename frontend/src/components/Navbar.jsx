@@ -1,17 +1,14 @@
+import logo from "../assets/logo.png";
 function Navbar() {
   return (
     <>
-      <div className="top-bar">
-        Submit your details now and get 5% off your first PCB order!
-      </div>
-
+     
+     
       <nav className="navbar">
 
         <div className="logo">
-          <h2>SHARA</h2>
-          <span>CIRCUITS</span>
-        </div>
-
+  <img src={logo} alt="Shara Circuits" />
+</div>
         <ul className="nav-links">
 
           <li>
@@ -40,11 +37,8 @@ function Navbar() {
 
         </ul>
 
-        <a
-          href="tel:+919187453367"
-          className="call-btn"
-        >
-          Call Now!!
+        <a href="#quote-form" className="call-btn">
+          Get Quote
         </a>
 
       </nav>
